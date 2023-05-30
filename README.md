@@ -12,6 +12,12 @@ Esses commits auxiliarão você e sua equipe a entenderem de forma facilitada qu
 
 Essa identificação ocorre por meio de uma palavra e emoji que identifica se aquele commit realizado se trata de uma alteração de código, atualização de pacotes, documentação, alteração de visual, teste...
 
+## 📚 Ebook
+
+> Este repositório é um projeto gratuito para a comunidade de desenvolvedores. Mas você pode me ajudar comprando o ebook "eFront" se estiver interessado em aprender ou melhorar suas habilidades de desenvolvimento frontend. O ebook é completo e cobre tecnologias mais requisitados do mercado como HTML, CSS, JavaScript, Sass, Bootstrap, React, React Router, TypeScript, styled-components, Tailwind CSS, React Hook Form, Radix UI, Storybook, Cypress, Next.js e muito mais. O valor é R$20,00 e sua compra me ajuda a produzir e fornecer mais conteúdo gratuito para a comunidade. Adquira agora e comece sua jornada no desenvolvimento frontend.
+
+- eFront - Estudando frontend do zero. [Clique aqui para comprar](https://iuricode.com/efront)
+
 ## 🦄 Tipo e Descrição
 
 O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
@@ -308,11 +314,9 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
 
 <div align="center">
   <br/>
-  <br/>
-  <br/>
     <div>
       <h1>Open Source</h1>
-      <sub>Copyright © 2022 - <a href="https://github.com/iuricode">iuricode</sub></a>
+      <sub>Copyright © 2023 - <a href="https://github.com/iuricode">iuricode</sub></a>
     </div>
     <br/>
     <p> 
