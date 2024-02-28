@@ -10,28 +10,58 @@ Essa identificação ocorre por meio de uma palavra e emoji que identifica se aq
 
 O commit semântico possui os elementos estruturais abaixo (tipos), que informam a intenção do seu commit ao utilizador(a) de seu código.
 
-- `feat`- Commits do tipo feat indicam que seu trecho de código está incluindo um **novo recurso** (se relaciona com o MINOR do versionamento semântico).
+- `feat`- Commits do tipo **feat** indicam que seu trecho de código está incluindo um **novo recurso** (se relaciona com o MINOR do versionamento semântico).
 
-- `fix` - Commits do tipo fix indicam que seu trecho de código commitado está **solucionando um problema** (bug fix), (se relaciona com o PATCH do versionamento semântico).
+- `fix` - Commits do tipo **fix** indicam que seu trecho de código commitado está **solucionando um problema** (bug fix), (se relaciona com o PATCH do versionamento semântico).
 
-- `docs` - Commits do tipo docs indicam que houveram **mudanças na documentação**, como por exemplo no Readme do seu repositório. (Não inclui alterações em código).
+- `docs` - Commits do tipo **docs** indicam que houveram **mudanças na documentação**, como por exemplo no Readme do seu repositório. (Não inclui alterações em código).
 
-- `test` - Commits do tipo test são utilizados quando são realizadas **alterações em testes**, seja criando, alterando ou excluindo testes unitários. (Não inclui alterações em código)
+- `test` - Commits do tipo **test** são utilizados quando são realizadas **alterações em testes**, seja criando, alterando ou excluindo testes unitários. (Não inclui alterações em código)
 
-- `build` - Commits do tipo build são utilizados quando são realizadas modificações em **arquivos de build e dependências**.
+- `build` - Commits do tipo **build** são utilizados quando são realizadas modificações em **arquivos de build e dependências**.
 
-- `perf` - Commits do tipo perf servem para identificar quaisquer alterações de código que estejam relacionadas a **performance**.
+- `perf` - Commits do tipo **perf** servem para identificar quaisquer alterações de código que estejam relacionadas a **performance**.
 
-- `style` - Commits do tipo style indicam que houveram alterações referentes a **formatações de código**, semicolons, trailing spaces, lint... (Não inclui alterações em código).
+- `style` - Commits do tipo **style** indicam que houveram alterações referentes a **formatações de código**, semicolons, trailing spaces, lint... (Não inclui alterações em código).
 
-- `refactor` - Commits do tipo refactor referem-se a mudanças devido a **refatorações que não alterem sua funcionalidade**, como por exemplo, uma alteração no formato como é processada determinada parte da tela, mas que manteve a mesma funcionalidade, ou melhorias de performance devido a um code review.
+- `refactor` - Commits do tipo **refactor** referem-se a mudanças devido a **refatorações que não alterem sua funcionalidade**, como por exemplo, uma alteração no formato como é processada determinada parte da tela, mas que manteve a mesma funcionalidade, ou melhorias de performance devido a um code review.
 
-- `chore` - Commits do tipo chore indicam **atualizações de tarefas** de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
+- `chore` - Commits do tipo **chore** indicam **atualizações de tarefas** de build, configurações de administrador, pacotes... como por exemplo adicionar um pacote no gitignore. (Não inclui alterações em código)
 
-- `ci` - Commits do tipo ci indicam mudanças relacionadas a **integração contínua** (_continuous integration_).
+- `ci` - Commits do tipo **ci** indicam mudanças relacionadas a **integração contínua** (_continuous integration_).
 
-- `raw` - Commits to tipo raw indicam mudanças relacionadas a arquivos de configurações, dados, features, parametros.
-  
+- `raw` - Commits to tipo **raw** indicam mudanças relacionadas a arquivos de configurações, dados, features, parametros.
+
+- `docker` - Commits do tipo **docker** indicam mudanças relacionadas a criação e configurações de arquivos docker, Dockerfile e etc.
+
+- `a11y` - Commits do tipo **a11y** indicam mudanças relacionadas a acessibilidade.
+
+- `deprecation` - Commits do tipo **deprecation** indicam mudanças relacionadas atualizações de código para lidar com métodos ou funcionalidades obsoletas.
+
+- `revert` - Commits do tipo **revert** é relacionado ao reverte de mudanças previamente aplicadas.
+
+- `api` - Commits do tipo **api** indicam trabalho relacionadas APIs externas.
+
+- `conflict` - Commits do tipo **conflict** indicam mudanças relacionadas resolução de conflitos.
+
+- `env` - Commits do tipo **env** indicam mudanças relacionadas variáveis de ambiente.
+
+- `i18n` - Commits do tipo **i18n** é relacionado a internacionalização.
+
+- `type` - Commits do tipo **type** é relacionado a criação, configurações e modificações de tipos.
+
+- `migration` - Commits do tipo **migration** é relacionado manipulação de migrations.
+
+- `security` - Commits do tipo **security** é relacionado a segurança.
+
+- `feedback` - Commits do tipo **feedback** é relacionado a incorporação de feedback.
+
+- `dependency` - Commits do tipo **dependency** é relacionado a atualização ou adição de dependências externas.
+
+- `cleanup` - Commits do tipo **cleanup** é relacionado a limpeza de código ou remoção de arquivos não utilizados.
+
+- `hotfix` - Commits do tipo **hotfix** é relacionado a Implementação de uma correção rápida em produção.
+
 ## Recomendações 🎉
 
 - Adicione um tipo consistente com o título do conteúdo.
@@ -227,12 +257,128 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
       <td>🥅 <code>:goal_net:</code></td>
       <td></td>
     </tr>
-   <tr>
+    <tr>
       <td>Dados</td>
       <td>🗃️ <code>:card_file_box:</code></td>
       <td><code>raw</code></td>
     </tr>
+    <tr>
+      <td>Docker e containers</td>
+      <td>🐳 <code>:whale:</code></td>
+      <td><code>docker</code></td>
+    </tr>
+    <tr>
+      <td>Melhorias na UI/UX</td>
+      <td>🎨 <code>:art:</code></td>
+      <td><code>feat</code></td>
+    </tr>
+    <tr>
+      <td>Trabalho com APIs externas</td>
+      <td>🔗 <code>:link:</code></td>
+      <td><code>api</code></td>
+    </tr>
+    <tr>
+      <td>Corrigindo erros de lint (específico para correções de lint)</td>
+      <td>💅 <code>:nail_care:</code></td>
+      <td><code>chore</code></td>
+    </tr>
+    <tr>
+      <td>Acessibilidade (melhorias específicas de acessibilidade)</td>
+      <td>🦮 <code>:guide_dog:</code></td>
+      <td><code>a11y</code></td>
+    </tr>
+    <tr>
+      <td>Internacionalização (adicionando ou atualizando traduções)</td>
+      <td>🌐 <code>:globe_with_meridians:</code></td>
+      <td><code>i18n</code></td>
+    </tr>
+    <tr>
+      <td>Melhoria de Código</td>
+      <td>🌈 <code>:rainbow:</code></td>
+      <td><code>feat</code></td>
+    </tr>
+    <tr>
+      <td>Correção de deprecations</td>
+      <td>⚠️ <code>:warning:</code></td>
+      <td><code>deprecation</code></td>
+    </tr>
+    <tr>
+      <td>Refatoração de código (não funcional)</td>
+      <td>🔨 <code>:hammer:</code></td>
+      <td><code>refactor</code></td>
+    </tr>
+    <tr>
+      <td>Implementação de feature flag</td>
+      <td>🚩 <code>:triangular_flag_on_post:</code></td>
+      <td><code>feat</code></td>
+    </tr>
+    <tr>
+      <td>Otimização de assets (imagens, fontes, etc.)</td>
+      <td>🐎 <code>:racehorse:</code></td>
+      <td><code>perf</code></td>
+    </tr>
+    <tr>
+      <td>Configurações de CI/CD</td>
+      <td>🔄 <code>:arrows_counterclockwise:</code></td>
+      <td><code>ci</code></td>
+    </tr>
+    <tr>
+      <td>Reversão de commits</td>
+      <td>🔙 <code>:back:</code></td>
+      <td><code>revert</code></td>
+    </tr>
+    <tr>
+      <td>Desfazendo alterações anteriores</td>
+      <td>⏪ <code>:rewind:</code></td>
+      <td><code>fix</code></td>
+    </tr>
+    <tr>
+      <td>Implementação de novas funcionalidades</td>
+      <td>🌟 <code>:star:</code></td>
+      <td><code>feat</code></td>
+    </tr>
+    <tr>
+      <td>Adicionando variáveis de ambiente</td>
+      <td>🌍 <code>:earth_americas:</code></td>
+      <td><code>env</code></td>
+    </tr>
+    <tr>
+      <td>Correção de tipos</td>
+      <td>✏️ <code>:pencil2:</code></td>
+      <td><code>type</code></td>
+    </tr>
+    <tr>
+      <td>Manipulação de Migrations</td>
+      <td>🔁 <code>:arrows_counterclockwise:</code></td>
+      <td><code>migration</code></td>
+    </tr>
+    <tr>
+      <td>Melhorias de segurança no código</td>
+      <td>🔏 <code>:lock_with_ink_pen:</code></td>
+      <td><code>security</code></td>
+    </tr>
+    <tr>
+      <td>Incorporação de feedback do usuário.</td>
+      <td>📣 <code>:mega:</code></td>
+      <td><code>feedback</code></td>
+    </tr>
+    <tr>
+      <td>Atualização ou adição de dependências</td>
+      <td>📥 <code>:inbox_tray:</code></td>
+      <td><code>dependency</code></td>
+    </tr>
+    <tr>
+      <td>Limpeza de código ou remoção de arquivos não utilizados</td>
+      <td>🗑️ <code>:wastebasket:</code></td>
+      <td><code>cleanup</code></td>
+    </tr>
+    <tr>
+      <td>Implementação de uma correção rápida em produção</td>
+      <td>🚑 <code>:ambulance:</code></td>
+      <td><code>hotfix</code></td>
+    </tr>
   </tbody>
+
 </table>
 
 ## 💻 Exemplos
@@ -317,6 +463,139 @@ O commit semântico possui os elementos estruturais abaixo (tipos), que informam
       </td>
       <td>🗃️ raw: RAW Data do ano aaaa</td>
     </tr>
+        <tr>
+      <td>
+        <code>git commit -m ":whale: docker: Adição de Dockerfile para ambiente de produção"</code>
+      </td>
+      <td>🐳 docker: Adição de Dockerfile para ambiente de produção</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":art: feat: Melhorias na interface do usuário para aumentar a usabilidade"</code>
+      </td>
+      <td>🎨 feat: Melhorias na interface do usuário para aumentar a usabilidade</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":link: api: Integração com a nova API de pagamentos"</code>
+      </td>
+      <td>🔗 api: Integração com a nova API de pagamentos</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":nail_care: chore: Correção de erros de lint no projeto"</code>
+      </td>
+      <td>🧹 chore: Correção de erros de lint no projeto</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":guide_dog: a11y: Melhorias de acessibilidade no formulário de login"</code>
+      </td>
+      <td>🦮 a11y: Melhorias de acessibilidade no formulário de login</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":globe_with_meridians: i18n: Adição de suporte a mais idiomas na internacionalização"</code>
+      </td>
+      <td>🌐 i18n: Adição de suporte a mais idiomas na internacionalização</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":rainbow: feat: Melhoria de código no módulo de autenticação"</code>
+      </td>
+      <td>🌈 feat: Melhoria de código no módulo de autenticação</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":warning: fix: Correção de deprecations após atualização de bibliotecas"</code>
+      </td>
+      <td>⚠️ deprecation: Correção de deprecations após atualização de bibliotecas</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":hammer: refactor: Refatoração do sistema de rotas para melhorar a manutenção"</code>
+      </td>
+      <td>🔨 refactor: Refatoração do sistema de rotas para melhorar a manutenção</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":triangular_flag_on_post: feat: Implementação de feature flag para novas funcionalidades em teste"</code>
+      </td>
+      <td>🚩 feat: Implementação de feature flag para novas funcionalidades em teste</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":racehorse: perf: Otimização de assets para acelerar o tempo de carregamento da página"</code>
+      </td>
+      <td>🐎 perf: Otimização de assets para acelerar o tempo de carregamento da página</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":arrows_counterclockwise: ci: Atualização das configurações de CI/CD para melhorar a integração"</code>
+      </td>
+      <td>🔄 ci: Atualização das configurações de CI/CD para melhorar a integração</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":back: revert: Reversão de commit que introduziu erro em produção"</code>
+      </td>
+      <td>🔙 revert: Reversão de commit que introduziu erro em produção</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":rewind: fix: Desfazendo alterações anteriores que causaram regressões nos testes"</code>
+      </td>
+      <td>⏪ fix: Desfazendo alterações anteriores que causaram regressões nos testes</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":star: feat: Implementação de novas funcionalidades no sistema de recomendações"</code>
+      </td>
+      <td>🌟 feat: Implementação de novas funcionalidades no sistema de recomendações</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":earth_americas: env: Adicionando variáveis de ambiente"</code>
+      </td>
+      <td>🌍 env: Adicionando novas variáveis de ambiente</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":pencil2: type: Correção de tipos"</code>
+      </td>
+      <td>✏️ type: Correção de tipos</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":arrows_counterclockwise: migration: criação da migration"</code>
+      </td>
+      <td>🔁 migration: criação da migration</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":lock_with_ink_pen: security: melhorando segurança no código"</code>
+      </td>
+      <td>🔏 security: melhorando segurança no código</td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":inbox_tray: dependency: atualização das dependências externas "</code>
+      </td>
+      <td>📥 dependency: atualização das dependências externas </td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":wastebasket: cleanup: removendo código desnecessário "</code>
+      </td>
+      <td>🗑️ cleanup: removendo código desnecessário </td>
+    </tr>
+    <tr>
+      <td>
+        <code>git commit -m ":ambulance: hotfix: correção em produção "</code>
+      </td>
+      <td>🚑 hotfix: correção em produção </td>
+    </tr>
+
   </tbody>
 </table>
 
